@@ -1,0 +1,44 @@
+.landing-page {
+    display: flex;
+    height: 100vh;
+}
+
+.side-banner {
+    flex: 1 1 50%;
+    background-color: rgb(54, 185, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-content {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-desc {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.our-desc li {
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.auth-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+<div class="landing-page">
+    <div class="side-banner">
+        <ul class="our-desc">
+            <li *ngFor="let info of sideBarInfoContent">
+                {{info}}
+            </li>
+        </ul>
+    </div>
+    <div class="side-content">
+        <div class="auth-container">
+            <h2>See what’s happening in the world right now</h2>
+            <h5>Join Twitter today.</h5>
+            <div class="btn-container">
+                <app-button btnName="Sign up" btnStyle="primary" (clicked)="showSignUp()"></app-button>
+                <app-button btnName="Login" (clicked)="showLogin()"></app-button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-modal [show]="selectedModal === 'SIGNUP'" title="Signup" (closed)="selectedModal = ''">
+    <h4>Signup Form will come here</h4>
+</app-modal>
+
+<app-modal [show]="selectedModal === 'LOGIN'" title="Login" (closed)="selectedModal = ''">
+    <h4>Login Form will come here</h4>
+</app-modal>
